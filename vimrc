@@ -124,16 +124,33 @@ set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %{strlen(getline('.'))}\ character
 let Tlist_Ctags_Cmd='/usr/bin/ctags'
 
 " show taglist at the right of the screen
-let Tlist_Use_Right_Window=1
+" let Tlist_Use_Right_Window=1
 
 " Only print tags for current buffer
 let Tlist_Show_One_File=1
 
-" min width for taglist buffer. Drupal functions name are usually pretty long
-let Tlist_WinWidth=50
+" min width for taglist buffer 
+let Tlist_WinWidth=40
 
 " only print constants, class and functions in our taglist
 let tlist_php_settings = 'php;d:Constantes;c:Classes;f:Fonctions'
+
+" sort order
+let Tlist_Sort_Type = "name"
+
+let Tlist_Auto_Open = 1
+
+let Tlist_Exit_OnlyWindow = 1
+
+let Tlist_Auto_Highlight_Tag = 1
+
+"================================
+"" PLUGIN NERDTREE SETTINGS
+"================================
+
+let g:NERDTreeWinPos = "right"
+
+let g:NERDTreeWinSize = 50
 
 "================================
 " CONFIG PLUGIN XDEBUG
@@ -159,9 +176,6 @@ let maplocalleader=";"
 " you need ctags to make this works through a whole project
 noremap <F7> <C-w>]
 inoremap <F7> <Esc><C-w>]
-
-"F12 toogle taglist buffer
-nnoremap <silent> <F10> :TlistToggle<CR>
 
 " open Navigation window with native nerdtree
 "nmap <silent><F9> :NERDTreeToggle<CR>
