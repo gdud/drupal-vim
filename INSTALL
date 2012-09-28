@@ -1,0 +1,10 @@
+Dependencies:
+=============
+
+Command-T:
+
+sudo apt-get install ruby1.8-dev
+
+TagList:
+
+sudo apt-get install exuberant-ctags
