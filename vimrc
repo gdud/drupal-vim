@@ -138,8 +138,6 @@ let tlist_php_settings = 'php;d:Constantes;c:Classes;f:Fonctions'
 " sort order
 let Tlist_Sort_Type = "name"
 
-let Tlist_Auto_Open = 1
-
 let Tlist_Exit_OnlyWindow = 1
 
 let Tlist_Auto_Highlight_Tag = 1
