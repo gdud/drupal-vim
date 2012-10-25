@@ -23,6 +23,9 @@ set t_Co=256
 "Default colorsheme
 colorscheme xoria256
 
+"GVim font
+set guifont=Monospace\ 9
+
 "===============================
 " DRUPAL SETTINGS
 "===============================
